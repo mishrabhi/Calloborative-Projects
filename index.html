@@ -1,11 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Collaborative Project</title>
-  </head>
-  <body>
-    <h1>Hello Guys!!!!!!!</h1>
-  </body>
-</html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collaborative Project</title>
+
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .container .logo img {
+      width: 80px;
+      align-items: center;
+    }
+
+
+    .container .links {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+
+    }
+
+
+    .container .links a {
+      text-decoration: none;
+      color: black;
+
+    }
+
+    .container .links a:last-child {
+      color: red;
+    }
+
+    .last {
+      display: flex;
+    }
+
+    .btn button {
+      padding: 10px;
+      border-radius: 20px;
+      color: white;
+      background-color: rgb(179, 47, 47);
+      border: none;
+    }
+
+    .btn img {
+      background-color: transparent;
+      width: 20px;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo"><img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIQIPToVcfOul0R-kR8q7HJ_MPedP-Et5HglXwey-sQw&s"
+        alt="reebok"></div>
+    <div class="links">
+      <a href="#">NEW</a>
+      <a href="#">ICONS</a>
+      <a href="#">MEN</a>
+      <a href="#">WOMEN</a>
+      <a href="#">SPORTS</a>
+      <a href="#">CLASSIC</a>
+      <a href="#">SALE</a>
+    </div>
+
+    <div class="last">
+      <img src="https://t3.ftcdn.net/jpg/04/99/34/78/360_F_499347841_IXq0bLOPN4MkKAa71nP3WMQq6LVlgeTO.jpg" alt="search"
+        height="50px">
+      <p>search</p>
+
+    </div>
+
+    <div class="btn">
+      <button><img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSQs6bu8SU9NLLem0TPUfH5S7WdNDQFRUP_zTr8d9gRA&s"
+          alt=""> EXPRESS DELIVERY <br> <small>Select your nearest store &gt;</small> </button>
+    </div>
+  </div>
+</body>
+
+</html>   
