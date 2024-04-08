@@ -4,8 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Collaborative Project</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        /* width: 100%; */
+      }
+      #top-nav {
+        background-color: black;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #left-nav {
+        padding-left: 25px;
+      }
+      #right-nav {
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        color: white;
+      }
+      #more-brands {
+        width: 125px;
+        background-color: black;
+        color: white;
+        border: none;
+      }
+      .right-icons {
+        border-right: 1px solid rgb(100, 98, 98);
+        padding-right: 15px;
+      }
+      .right-icons:last-child {
+        border: none;
+      }
+      .right-icons img {
+        width: 50px;
+        height: 30px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello Guys!!!!!!!</h1>
+    <nav id="top-nav">
+      <div id="left-nav">
+        <select name="more-brands" id="more-brands">
+          <option value="" selected>MORE BRANDS</option>
+        </select>
+      </div>
+      <div id="right-nav">
+        <div class="right-icons">STORES</div>
+        <div class="right-icons">CONTACT US</div>
+        <div class="right-icons">LOG IN</div>
+        <div class="right-icons">AA</div>
+        <div class="right-icons">
+          <img src="images/download.png" alt="" />
+        </div>
+      </div>
+    </nav>
   </body>
 </html>
