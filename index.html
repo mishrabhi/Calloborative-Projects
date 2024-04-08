@@ -1,90 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collaborative Project</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Collaborative Project</title>
+    <style>
+      body {
+        border: 3px solid black;
+      }
+      .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
 
-  <style>
-    .container {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
+      .container .logo img {
+        width: 80px;
+        align-items: center;
+      }
 
-    .container .logo img {
-      width: 80px;
-      align-items: center;
-    }
+      .container .links {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+      }
 
+      .container .links a {
+        text-decoration: none;
+        color: black;
+      }
 
-    .container .links {
-      display: flex;
-      gap: 40px;
-      align-items: center;
+      .container .links a:last-child {
+        color: red;
+      }
 
-    }
+      .last {
+        display: flex;
+      }
 
+      .btn button {
+        padding: 10px;
+        border-radius: 20px;
+        color: white;
+        background-color: rgb(179, 47, 47);
+        border: none;
+      }
 
-    .container .links a {
-      text-decoration: none;
-      color: black;
+      .btn img {
+        background-color: transparent;
+        width: 20px;
+        align-items: center;
+      }
+      .big-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        width: auto;
+      }
+      .card {
+        width: 200px;
+        /* border: 1px solid #ccc; */
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .card img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .description {
+        margin-top: 20px;
+        text-align: center;
+      }
+      #first {
+        font-size: x-small;
+        text-align: left;
+      }
 
-    }
+      #second {
+        font-size: smaller;
+        text-align: left;
+      }
 
-    .container .links a:last-child {
-      color: red;
-    }
+      #third {
+        font-size: medium;
+        font-weight: 800;
+        text-align: left;
+      }
+    </style>
+  </head>
 
-    .last {
-      display: flex;
-    }
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIQIPToVcfOul0R-kR8q7HJ_MPedP-Et5HglXwey-sQw&s"
+          alt="reebok"
+        />
+      </div>
+      <div class="links">
+        <a href="#">NEW</a>
+        <a href="#">ICONS</a>
+        <a href="#">MEN</a>
+        <a href="#">WOMEN</a>
+        <a href="#">SPORTS</a>
+        <a href="#">CLASSIC</a>
+        <a href="#">SALE</a>
+      </div>
 
-    .btn button {
-      padding: 10px;
-      border-radius: 20px;
-      color: white;
-      background-color: rgb(179, 47, 47);
-      border: none;
-    }
+      <div class="last">
+        <img
+          src="https://t3.ftcdn.net/jpg/04/99/34/78/360_F_499347841_IXq0bLOPN4MkKAa71nP3WMQq6LVlgeTO.jpg"
+          alt="search"
+          height="50px"
+        />
+        <p>search</p>
+      </div>
 
-    .btn img {
-      background-color: transparent;
-      width: 20px;
-      align-items: center;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="container">
-    <div class="logo"><img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIQIPToVcfOul0R-kR8q7HJ_MPedP-Et5HglXwey-sQw&s"
-        alt="reebok"></div>
-    <div class="links">
-      <a href="#">NEW</a>
-      <a href="#">ICONS</a>
-      <a href="#">MEN</a>
-      <a href="#">WOMEN</a>
-      <a href="#">SPORTS</a>
-      <a href="#">CLASSIC</a>
-      <a href="#">SALE</a>
+      <div class="btn">
+        <button>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSQs6bu8SU9NLLem0TPUfH5S7WdNDQFRUP_zTr8d9gRA&s"
+            alt=""
+          />
+          EXPRESS DELIVERY <br />
+          <small>Select your nearest store &gt;</small>
+        </button>
+      </div>
     </div>
-
-    <div class="last">
-      <img src="https://t3.ftcdn.net/jpg/04/99/34/78/360_F_499347841_IXq0bLOPN4MkKAa71nP3WMQq6LVlgeTO.jpg" alt="search"
-        height="50px">
-      <p>search</p>
-
+    <div class="big-container">
+      <div class="card">
+        <img src="Shoes1.png" alt="Image 1" />
+        <div class="description">
+          <p id="first">TRAINING SHOES</p>
+          <p id="second">Reebok Women NFX Trainer</p>
+          <p id="third">$7,599</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Shoes2.png" alt="Image 2" />
+        <div class="description">
+          <p id="first">CLASSIC SHOES</p>
+          <p id="second">Reebok Women NFX Trainer</p>
+          <p id="third">$7,599</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Shoes3.png" alt="Image 3" />
+        <div class="description">
+          <p id="first">RUNNING SHOES</p>
+          <p id="second">Reebok Women NFX Trainer</p>
+          <p id="third">$7,599</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Shoes4.png" alt="Image 4" />
+        <div class="description">
+          <p id="first">CLASSIC SHOES</p>
+          <p id="second">Reebok Women NFX Trainer</p>
+          <p id="third">$7,599</p>
+        </div>
+      </div>
     </div>
-
-    <div class="btn">
-      <button><img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSQs6bu8SU9NLLem0TPUfH5S7WdNDQFRUP_zTr8d9gRA&s"
-          alt=""> EXPRESS DELIVERY <br> <small>Select your nearest store &gt;</small> </button>
-    </div>
-  </div>
-</body>
-
-</html>   
+  </body>
+</html>
