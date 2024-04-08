@@ -9,6 +9,40 @@
       body {
         border: 3px solid black;
       }
+      #top-nav {
+        background-color: black;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #left-nav {
+        padding-left: 25px;
+      }
+      #right-nav {
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        color: white;
+      }
+      #more-brands {
+        width: 125px;
+        background-color: black;
+        color: white;
+        border: none;
+      }
+      .right-icons {
+        border-right: 1px solid rgb(100, 98, 98);
+        padding-right: 15px;
+      }
+      .right-icons:last-child {
+        border: none;
+      }
+      .right-icons img {
+        width: 50px;
+        height: 30px;
+      }
       .container {
         display: flex;
         justify-content: space-around;
@@ -65,7 +99,6 @@
       }
       .card {
         width: 200px;
-        /* border: 1px solid #ccc; */
         border-radius: 8px;
         overflow: hidden;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -98,6 +131,22 @@
   </head>
 
   <body>
+    <nav id="top-nav">
+      <div id="left-nav">
+        <select name="more-brands" id="more-brands">
+          <option value="" selected>MORE BRANDS</option>
+        </select>
+      </div>
+      <div id="right-nav">
+        <div class="right-icons">STORES</div>
+        <div class="right-icons">CONTACT US</div>
+        <div class="right-icons">LOG IN</div>
+        <div class="right-icons">AA</div>
+        <div class="right-icons">
+          <img src="aditya-birla-group.png" alt="" />
+        </div>
+      </div>
+    </nav>
     <div class="container">
       <div class="logo">
         <img
